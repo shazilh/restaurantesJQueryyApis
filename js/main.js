@@ -10,10 +10,17 @@ function initMap() {
   });
 }
 //traer valores de clases de mapas
-var $mapaQuintonil = $(".irMapaQ");
-var $mapaPujol=$(".irMapaP");
+$(".mapa").click(function(){
+    var latitud=$(this).data("lat");
+    var longitud=$(this).data("lng");
+    
+    var mapa = $("#map");
 
-//enlazar evento click a cada mapa
+})
+
+
+
+/*enlazar evento click a cada mapa
     $mapaQuintonil.click(initMap2);
     $mapaPujol.click(initMap3);
 
@@ -40,7 +47,7 @@ function initMap3() {
         position: pujol,
         map:map
     }); 
-}
+}*/
 
 
 var restaurantes = [
