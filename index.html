@@ -1,0 +1,170 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Restaurantes JQuery y Geolocatizacion API</title>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css" media="screen,projection">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+   <header class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<form id="search-form" class="left">
+					<div class="input-field">
+						<input id="search" type="search" placeholder="Pon el nombre del Restaurante">
+						<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+						<i class="material-icons">close</i>
+					</div>
+				</form>
+				<a href="#" class="brand-logo center">Mis restaurantes favoritos</a>
+			</div>
+		</nav>
+	</header>
+   <!--termina codigo del nav-->
+    <section class="container">
+                  <h5>Ubicación</h5>
+                  <div id="map"></div>
+    </section>
+    <main class="container">
+		<section class="row">
+          <section class="restaurantes">
+            <article class="row restaurants">
+              <div class="card-panel hoverable grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <div class="col s3">
+                    <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5 class="name">Quintonil</h5>
+                    <span class="black-text">
+                      Phone: +51986161136
+                    </span>
+                    <span class="black-text">
+                      Dirección: Newton 55 Col.Polanco, Ciudad de México.
+                    </span>
+                     <div class="card-action">
+                      <a href="#">Ver mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+                <article class="row restaurants">
+              <div class="card-panel hoverable grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <div class="col s3">
+                    <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5 class="name">Pujol</h5>
+                    <span class="black-text">
+                      Phone: +51999999999
+                    </span>
+                    <span class="black-text">
+                      Dirección: Francisco Petrarca 254, Col.Polanco.
+                    </span>
+                    <div class="card-action">
+                      <a href="#">Ver mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </article>
+                <article class="row restaurants">
+              <div class="card-panel hoverable grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <div class="col s3">
+                    <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5 class="name">Biko</h5>
+                    <span class="black-text">
+                      Phone: +51988888888
+                    </span>
+                    <span class="black-text">
+                      Dirección: Mazarik 407, Col.Polanco.
+                    </span>
+                    <div class="card-action">
+                      <a href="#">Ver mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </article>
+                <article class="row restaurants">
+              <div class="card-panel hoverable grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <div class="col s3">
+                    <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5 class="name">Pangea</h5>
+                    <span class="black-text">
+                      Phone: +5197777777
+                    </span>
+                    <span class="black-text">
+                      Dirección: Bosques del Valle 110, Col.Bosques del Valle.
+                    </span>
+                    <div class="card-action">
+                      <a href="#">Ver mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </article>
+                <article class="row restaurants">
+              <div class="card-panel hoverable grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <div class="col s3">
+                    <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5 class="name">Amaranta</h5>
+                    <span class="black-text">
+                      Phone: +51966666666
+                    </span>
+                    <span class="black-text">
+                      Dirección: Francisco Murguía 402,Universidad, Toluca de Lerdo.
+                    </span>
+                    <div class="card-action">
+                      <a href="#">Ver mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </article>
+                <article class="row restaurants">
+              <div class="card-panel hoverable grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <div class="col s3">
+                    <img src="http://via.placeholder.com/200x200" alt="Contact" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5 class="name">Sud 777</h5>
+                    <span class="black-text">
+                      Phone: +51985612231
+                    </span>
+                      <span class="black-text">
+                      Dirección: Blvd. de la Luz 777, Jardines del Pedregal.
+                    </span>
+                    <div class="card-action">
+                      <a href="#">Ver mapa</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                </article>
+          </section>
+      </section>
+	</main>
+    
+    <!-- Enlaces JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/main.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe2IxjHW8JEg5x3frjLzM6u2gwyc-915I&callback=initMap"></script>
+</body>
+</html>
