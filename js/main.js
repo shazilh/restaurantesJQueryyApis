@@ -9,14 +9,46 @@ function initMap() {
     map: map
   });
 }
+//traer valores de clases de mapas
+var $mapaQuintonil = $(".irMapaQ");
+var $mapaPujol=$(".irMapaP");
+
+//enlazar evento click a cada mapa
+    $mapaQuintonil.click(initMap2);
+    $mapaPujol.click(initMap3);
+
+function initMap2() {
+    var quintonil={lat:19.4308557, lng:-99.1938909};
+    var map=new
+    google.maps.Map(document.getElementById('map'),{
+        zoom:17,
+        center:quintonil
+    });
+    var marker = new google.maps.Marker({
+        position: quintonil,
+        map:map
+    }); 
+}
+function initMap3() {
+    var pujol={lat:19.432394, lng:-99.1969973};
+    var map=new
+    google.maps.Map(document.getElementById('map'),{
+        zoom:17,
+        center:pujol
+    });
+    var marker = new google.maps.Marker({
+        position: pujol,
+        map:map
+    }); 
+}
+
 
 var restaurantes = [
 	{
 		"nombre": "Quintonil",
 		"numero": "+51986161136",
 		"foto": "http://via.placeholder.com/200x200",
-        "direccion": "Newton 55, Col.Polanco,Cd. de México"
-        
+        "direccion": "Newton 55, Col.Polanco,Cd. de México",
 	},
 	{
 		"nombre": "Pujol",
@@ -66,7 +98,7 @@ var plantillaRestaurantes = '<article class="row restaurants">' +
               '</span>' +
               '<div class="card-action">'+
                  '<a href="#">'+
-                'Ver mapa:__mapa__'+'</a>'+
+                'Ver mapa:'+'</a>'+
               '</div>'+
             '</div>' +
           '</div>' +
@@ -89,13 +121,15 @@ var filtrarRestaurantes = function (e) {
 var mostrarRestaurantes = function (restaurantes) {
 	var plantillaFinal = "";
 	restaurantes.forEach(function (restaurante) {
-		plantillaFinal += plantillaRestaurantes.replace("__nombre__", restaurantes.nombre)
-			.replace("__numero__", restaurantes.numero)
-			.replace("__foto__", restaurantes.foto)
-            .replace("__mapa__", restaurantes.direccion);
+		plantillaFinal += plantillaRestaurantes.replace("__nombre__", restaurante.nombre)
+			.replace("__numero__", restaurante.numero)
+			.replace("__foto__", restaurante.foto)
+            .replace("__direccion__", restaurante.direccion)
+            
+        
 	});
 	$(".restaurantes").html(plantillaFinal);
 };
+var $mapa=
 
 $(document).ready(cargarPagina);
-
