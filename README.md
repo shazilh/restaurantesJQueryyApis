@@ -3,13 +3,12 @@ Desarrollo de una Página Web que se crea con codigo JQuery y se le agrega la fu
 
 Versión 0.1.0
 
-Maquetar la estructura de la app, elementos mínimos requeridos: mapa, búsqueda, lista de restaurantes.
-Mostrar el mapa en la posición actual del usuario al iniciar la web app.
+Maquetar la estructura de la app, elementos mínimos requeridos: mapa, búsqueda, lista de restaurantes. Mostrar el mapa en la posición actual del usuario al iniciar la web app.
 
 Versión 0.2.0
 
-Armar un arreglo de objetos con la lista de restaurantes ó lugares de comida.
-Mostrar la lista de restaurantes en el HTML.
+Armar un arreglo de objetos con la lista de restaurantes ó lugares de comida. Mostrar la lista de restaurantes en el HTML.
+
 
 Versión 0.3.0
 
